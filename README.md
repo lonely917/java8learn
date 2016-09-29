@@ -1,0 +1,3 @@
+此系列记录java8的相关知识。
+src为示例工程。
+LearningRecord为相关知识总结。
