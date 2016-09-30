@@ -18,6 +18,16 @@ public class TestMethodRef {
 		
 		//函数引用方法输出数据
 		datas.forEach(System.out::println);
+		
+		//查看源码可以知道传入的是一个consumer类型的参数，一个函数接口，我们自定义一个
+		System.out.print("data equals Beijing:");
+		datas.forEach(s->
+						{
+							if(s.equalsIgnoreCase("Beijing"))
+								{
+								 System.out.println(s);
+								}
+						});
 	}
 
 }
