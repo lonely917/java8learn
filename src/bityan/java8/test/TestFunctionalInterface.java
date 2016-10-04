@@ -58,6 +58,10 @@ public class TestFunctionalInterface {
 		System.out.println("输出每个数据的平方：");
 		ConditionalPrintByConsumer(list, n-> System.out.println(n*n));
 		
+		//collection 提供如下函数传入一个 consumer实现
+		System.out.println("输出每个数据的平方：");
+		list.forEach(n-> System.out.println(n*n));
+		
 		
 	}
 	
