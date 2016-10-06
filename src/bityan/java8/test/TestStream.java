@@ -11,7 +11,7 @@ public class TestStream {
 
 	public static void main(String[] args) {
 		
-//		testStream();
+		testStream();
 		testStreamContrast();
 	}
 	
@@ -21,6 +21,7 @@ public class TestStream {
 		//stream and filter
 		System.out.println("过滤空字符串:");
 		List<String> strings = Arrays.asList("abc", "", "bc", "efg", "abcd","", "jkl");
+//		strings.add("cc");//这里会报出异常，UnsupportedOperationException，strings是固定长度的，通过asList返回的是一个固定长度arraylist。
 		List<String> filtered = strings.stream().filter(s->!s.isEmpty()).collect(Collectors.toList());;
 		System.out.println(filtered);
 		
